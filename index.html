@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saldanel's site</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNT39KLPZK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZNT39KLPZK');
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<style>
+.calendar-table {
+  margin: 0 auto;
+  width: 700px;
+}
+.calendar-day {
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  height: 120px;
+}
+.outside .date {
+  color: #ccc;
+}
+.date {
+  font-size: .6em;
+}
+.event {
+  border-top: 1px solid #b2dba1;
+  border-bottom: 1px solid #b2dba1;
+  background-image: linear-gradient(to bottom, #dff0d8 0px, #c8e5bc 100%);
+  background-repeat: repeat-x;
+  color: #3c763d;
+  border-width: 1px;
+  font-size: .75em;
+  padding: 0 .75em;
+  line-height: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 1px;
+}
+.event.begin {
+  border-left: 1px solid #b2dba1;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.event.end {
+  border-right: 1px solid #b2dba1;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.event.clear {
+  background: none;
+  border: 1px solid transparent;
+}
+.outside .event {
+  background-image: linear-gradient(to bottom, #ccc 0px, #eee 100%);
+  color: #555;
+}
+#today {
+  background-color: aliceblue;
+}
+.calendar-table > thead > tr > th,
+.calendar-table > tbody > tr > th,
+.calendar-table > tfoot > tr > th,
+.calendar-table > thead > tr > td,
+.calendar-table > tbody > tr > td,
+.calendar-table > tfoot > tr > td {
+  padding-left: 0;
+  padding-right: 0;
+}
+.filters {
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+.filter {
+    display: inline-block;
+    float: none;
+}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+          <h1>Saldanel<small class="text-body-secondary"> the TotalBattle fan site</small></h1>
+          <p>
+            I'm Saldanel, your host. Welcome to my site, where I expect you can find useful advise on your daily
+            <a href="https://totalbattle.com">TotalBattle</a> battles.
+          </p>
+          <p>
+            TotalBattle is a real time colaborative game, representing a middle age world plenty of might and magic.
+            Each player rules a city with a Hero and several Captains. The game complexity grows as long as you get more
+            experience, what provides a good evolution for the game. The better you understand the game, the better
+            player you will be.
+          </p>
+          <p>
+            And that's why I created this site: to help you and me to improve the game experience, by providing some
+            advises or just a "to do" list to get the most of each event.
+          </p>
+          <p>
+            This is a live site and will change over time. If you have any constructive suggestion, find a bug or just
+            want to contact me, I'm available at <a href="mailto:saldanelsilver@gmail.com">saldanelsilver@gmail.com</a>
+          </p>
+      </div>
+
+      <div class="row">
+        <h2>Calendar</h2>
+        <table class="table table-condensed calendar-table">
+          <thead>
+            <tr>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+              <th>Sunday</th>
+            </tr>
+          </thead>
+          <tbody id="calendar">
+
+
+            <tr>
+
+                <td class="calendar-day outside" >
+                    <div class="date">26</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Raise of the Ancient" >Raise of the Ancient</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Clash for the Throne" >Clash for the Throne</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Trade routes" >Trade routes</div>
+
+                </td>
+
+
+
+                <td class="calendar-day outside" >
+                    <div class="date">27</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ragnarok" >Ragnarok</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Thirst for battle" >Thirst for battle</div>
+
+                </td>
+
+
+
+                <td class="calendar-day outside" >
+                    <div class="date">28</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ragnarok" >Ragnarok</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="The great hunt" >The great hunt</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Inmortal Essence" >Inmortal Essence</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pursuit of evolution" >Pursuit of evolution</div>
+
+                </td>
+
+
+
+                <td class="calendar-day outside" >
+                    <div class="date">29</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Doomsday" >Doomsday</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Lucky Bazaar" >Lucky Bazaar</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pursuit of Experience" >Pursuit of Experience</div>
+
+                </td>
+
+
+
+                <td class="calendar-day outside" >
+                    <div class="date">30</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Lucky Bazaar" >Lucky Bazaar</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Arachne&#39;s Swarm" >Arachne&#39;s Swarm</div>
+
+                </td>
+
+
+
+                <td class="calendar-day " id="today">
+                    <div class="date">31</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ancients&#39; treasure" >Ancients&#39; treasure</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ruthless Slaughter" >Ruthless Slaughter</div>
+
+                </td>
+
+
+
+                <td class="calendar-day " >
+                    <div class="date">1</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Raise of the Ancient" >Raise of the Ancient</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Trade routes" >Trade routes</div>
+
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+
+                <td class="calendar-day " >
+                    <div class="date">2</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Armageddon" >Armageddon</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Clash of Kingdoms" >Clash of Kingdoms</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Thirst for battle" >Thirst for battle</div>
+
+                </td>
+
+
+
+                <td class="calendar-day " >
+                    <div class="date">3</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Armageddon" >Armageddon</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="The great hunt" >The great hunt</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Inmortal Essence" >Inmortal Essence</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pursuit of evolution" >Pursuit of evolution</div>
+
+                </td>
+
+
+
+                <td class="calendar-day " >
+                    <div class="date">4</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Doomsday" >Doomsday</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Pursuit of Experience" >Pursuit of Experience</div>
+
+                </td>
+
+
+
+                <td class="calendar-day " >
+                    <div class="date">5</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Arachne&#39;s Swarm" >Arachne&#39;s Swarm</div>
+
+                </td>
+
+
+
+                <td class="calendar-day " >
+                    <div class="date">6</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ancients&#39; treasure" >Ancients&#39; treasure</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Ruthless Slaughter" >Ruthless Slaughter</div>
+
+                </td>
+
+
+
+                <td class="calendar-day " >
+                    <div class="date">7</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Raise of the Ancient" >Raise of the Ancient</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Clash for the Throne" >Clash for the Throne</div>
+
+                    <div class="event begin end" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Trade routes" >Trade routes</div>
+
+                </td>
+
+
+          </tbody>
+        </table>
+      </div>
+      <div class="row">
+        <h2>Advises for today</h2>
+        <p>Remember to take the daily prize (4x15m Speedup):
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="btn btn-light" target="_blank" href="https://totalbattle.com/?present=speedups15">Browser/TotalBattle</a></li>
+            <li class="list-inline-item"><a class="btn btn-light" target="_blank" href="https://totalbattle.onelink.me/Xsl6/shl7uy9z">Browser/Triumph</a></li>
+            <li class="list-inline-item"><a class="btn btn-light" target="_blank" href="https://triumph.totalbattle.com/?present=speedups15">Mobile (IOS/Android)</a></li>
+          </ul>
+        </p>
+
+        <p>
+          Follow recommendations when attacking different Vaults. If you are organizing the Raid, ensure to accept just the right troops.
+
+        </p>
+
+        <p>
+          If you are organizing the Raid, ensure to accept just the right troops.
+
+        </p>
+
+        <p>
+          This is a good moment to experiment: try to find your own limits by attacking monsters you usually won&#39;t attack, taking advantage of reviving them with silver.
+
+        </p>
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+  </body>
+</html>
+
